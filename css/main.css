@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #c4e4e7 !important;
+}
+.wrapper {
+  max-width: 750px;
+  margin: 100px auto;
+}
+.bill-calculator {
+  width: 100%;
+  min-height: 400px;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 15px;
+}
+.bill-calculator-flex {
+  padding: 25px 40px 25px 40px;
+}
+.input-data {
+  position: relative;
+}
+.input-data-people {
+  position: relative;
+}
+.input-data-people input {
+  background-color: #f3f8fb;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  padding-left: 30px;
+}
+.input-data-people input:focus {
+  outline: none;
+}
+.input-data-people input::placeholder {
+  position: relative;
+  font-family: sans-serif;
+  left: 330px;
+}
+.input-data-people .bill-person {
+  left: 10px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.input-data input {
+  background-color: #f3f8fb;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  padding-left: 30px;
+}
+.input-data input:focus {
+  outline: none;
+}
+.input-data input::placeholder {
+  position: relative;
+  font-family: sans-serif;
+  left: 330px;
+}
+.bill-dollar {
+  left: 10px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.select-options {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+.select-options .input-precentage {
+  width: 30%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00474b;
+  color: #fff;
+  padding: 15px 5px;
+  border-radius: 5px;
+  border: none;
+}
+.select-options input {
+  display: none;
+}
+.select-options > input:focus {
+  outline: none;
+}
+.select-options > input::placeholder {
+  color: #fff;
+}
+.active-select {
+  background-color: aqua !important;
+  color: orange !important;
+}
+.select-options > button {
+  width: 30%;
+  display: block;
+  border-radius: 5px;
+  padding: 15px 5px;
+  border: none;
+}
+.calculate-tip-title {
+  font-size: 20px;
+}
+.calculate-amount {
+  padding: 50px 25px 25px 25px;
+  border-radius: 15px;
+  min-height: 360px;
+  background-color: #00474b;
+}
+.calculate-text {
+  color: #6da5a9;
+}
+.reset-btn {
+  border: none;
+  margin-top: 25px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #0d686d;
+  color: #fff;
+}
+.calculate-tip-amount {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-left: 50px;
+  color: #1a9085;
+  font-weight: 900;
+}
+.calculate-total-amount-span {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-left: 110px;
+  color: #1a9085;
+  font-weight: 900;
+}
+@media only screen and (max-width: 768px){
+  form{
+    flex-direction: column;
+  }
+}
